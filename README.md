@@ -1,6 +1,6 @@
 # devcontainer_template
 
-[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Dev-Container の Template ブランチ
 
@@ -8,7 +8,6 @@ Dev-Container の Template ブランチ
 
 このテンプレートをcloneしたら以下を自分の環境に合わせて編集しましょう。
 
-- [Contribution guidelines for this project](.devcontainer/.env)
 - [devcontainer.json](.devcontainer/devcontainer.json)
 - [compose.yml](.devcontainer/compose.yml)
 - [pr_test.yml](.github/workflows/pr_test.yml)

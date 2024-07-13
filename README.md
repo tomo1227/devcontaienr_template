@@ -15,16 +15,17 @@ Dev-Container の Template ブランチ
 - [.env](.env)
 - [README.md](README.md)
 
+## PORTの割り当て
 
-## Merge
+[.env](.env)でホストIPを変更すれば、他プロジェクトとポートが被っても使用できる。
 
-main にマージするときは`squash and merge`すること
-
-## Commit Template の設定
-
-```bash
-git config --global commit.template .commit.template
-```
+> [!IMPORTANT]
+> .envのHOST_IPに127.0.0.1以外のホストIP(ループバックアドレス)を指定するとき
+> 以下のコマンドをターミナルで事前に叩いておく必要がある。(127.0.0.2の箇所にHOST IPを指定)
+>
+> ```txt
+> sudo ifconfig lo0 alias 127.0.0.2
+> ```
 
 ## Commit Message ガイドライン
 
@@ -32,10 +33,10 @@ git config --global commit.template .commit.template
 
 ## Pull Request ガイドライン
 
-`[emoji][type]: (title)`
+`[type][emoji] (title)`
 
-- ✨feat: ログイン機能を追加
-- 👓fix(a11y): ナビゲーションのアクセシビリティを改善
+- feat✨ ログイン機能を追加
+- fix👓 ナビゲーションのアクセシビリティを改善
 
 ### Pull Request Type
 
